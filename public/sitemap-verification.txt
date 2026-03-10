@@ -1,0 +1,5 @@
+Este archivo verifica que los archivos de /public se están copiando correctamente a la raíz del hosting.
+Si puedes ver este archivo en https://geomarketingia.com/sitemap-verification.txt
+entonces el sitemap.xml también debería estar accesible en https://geomarketingia.com/sitemap.xml
+
+Fecha de creación: 2026-03-10

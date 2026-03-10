@@ -11,6 +11,9 @@ import { CasosExito } from './pages/casos-exito';
 import { Nosotros } from './pages/nosotros';
 import { Contacto } from './pages/contacto';
 import { NotFound } from './pages/not-found';
+import { AvisoLegal } from './pages/legal/aviso-legal';
+import { PoliticaPrivacidad } from './pages/legal/politica-privacidad';
+import { TerminosServicio } from './pages/legal/terminos-servicio';
 
 // Service Pages
 import { ServicioGEO } from './pages/servicios/geo';
@@ -26,11 +29,13 @@ import { ArticuloContenidoCitable } from './pages/blog/contenido-citable';
 import { ArticuloSEOvsGEO } from './pages/blog/seo-vs-geo';
 import { ArticuloSearchGPT } from './pages/blog/searchgpt';
 import { Articulo5Errores } from './pages/blog/5-errores';
-
-// Legal Pages
-import { AvisoLegal } from './pages/legal/aviso-legal';
-import { PoliticaPrivacidad } from './pages/legal/politica-privacidad';
-import { TerminosServicio } from './pages/legal/terminos-servicio';
+import { ArticuloFuturoPPC } from './pages/blog/futuro-ppc';
+import { ArticuloPerplexityVsGoogle } from './pages/blog/perplexity-vs-google';
+import { ArticuloIAGenerativa } from './pages/blog/ia-generativa';
+import { ArticuloMetricasGEO } from './pages/blog/metricas-geo';
+import { ArticuloTendencias2026 } from './pages/blog/tendencias-2026';
+import { ArticuloROICampanasIA } from './pages/blog/roi-campanas-ia';
+import { ArticuloArquitecturaWeb } from './pages/blog/arquitectura-web';
 
 export const router = createBrowserRouter([
   {
@@ -51,6 +56,13 @@ export const router = createBrowserRouter([
       { path: 'blog/seo-vs-geo', Component: ArticuloSEOvsGEO },
       { path: 'blog/searchgpt', Component: ArticuloSearchGPT },
       { path: 'blog/5-errores', Component: Articulo5Errores },
+      { path: 'blog/futuro-ppc', Component: ArticuloFuturoPPC },
+      { path: 'blog/perplexity-vs-google', Component: ArticuloPerplexityVsGoogle },
+      { path: 'blog/ia-generativa', Component: ArticuloIAGenerativa },
+      { path: 'blog/metricas-geo', Component: ArticuloMetricasGEO },
+      { path: 'blog/tendencias-2026', Component: ArticuloTendencias2026 },
+      { path: 'blog/roi-campanas-ia', Component: ArticuloROICampanasIA },
+      { path: 'blog/arquitectura-web', Component: ArticuloArquitecturaWeb },
       { path: 'casos-exito', Component: CasosExito },
       { path: 'nosotros', Component: Nosotros },
       { path: 'contacto', Component: Contacto },

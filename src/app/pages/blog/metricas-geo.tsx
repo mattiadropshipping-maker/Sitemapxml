@@ -16,18 +16,33 @@ export function ArticuloMetricasGEO() {
         KPIs esenciales que debes trackear para evaluar tu desempeño en motores de búsqueda generativos.
       </div>
 
+      {/* Tabla de Contenidos */}
+      <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-xl mb-8 border border-blue-200">
+        <h3 className="text-xl font-bold mb-4" style={{ color: 'var(--brand-navy)' }}>
+          📋 Tabla de Contenidos
+        </h3>
+        <ul className="space-y-2 text-gray-700">
+          <li>• <a href="#metricas-criticas" className="hover:text-blue-600">Las 7 métricas críticas de GEO</a></li>
+          <li>• <a href="#framework" className="hover:text-blue-600">Framework de medición mensual</a></li>
+          <li>• <a href="#herramientas" className="hover:text-blue-600">Herramientas de tracking</a></li>
+          <li>• <a href="#dashboards" className="hover:text-blue-600">Dashboards y reportes</a></li>
+          <li>• <a href="#errores" className="hover:text-blue-600">Errores comunes al medir GEO</a></li>
+          <li>• <a href="#faq" className="hover:text-blue-600">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+
       <div className="prose max-w-none">
         <p className="text-xl leading-relaxed text-gray-700 mb-6">
-          No puedes optimizar lo que no mides. Pero las métricas tradicionales de SEO <strong>(rankings, tráfico orgánico, 
-          backlinks) no capturan el verdadero impacto de GEO</strong>.
+          No puedes optimizar lo que no mides. Pero las métricas tradicionales de <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">SEO</a> <strong>(rankings, tráfico orgánico, 
+          backlinks) no capturan el verdadero impacto de <Link to="/blog/que-es-geo" className="text-blue-600 hover:underline font-semibold">GEO</Link></strong>.
         </p>
 
         <p className="text-lg leading-relaxed text-gray-700 mb-8">
           Esta guía define los <strong>7 KPIs esenciales para trackear tu estrategia GEO</strong> y cómo medirlos 
-          efectivamente en 2026.
+          efectivamente en 2026. Si necesitas ayuda implementando un sistema de medición, conoce nuestro <Link to="/servicios/geo" className="text-blue-600 hover:underline font-semibold">servicio de consultoría GEO</Link> que incluye <Link to="/blog/auditoria-ia" className="text-blue-600 hover:underline font-semibold">auditoría profesional de visibilidad en IA</Link>.
         </p>
 
-        <h2 className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+        <h2 id="metricas-criticas" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
           Las 7 métricas críticas de GEO
         </h2>
 
@@ -238,9 +253,9 @@ export function ArticuloMetricasGEO() {
           </div>
         </div>
 
-        {/* Dashboard recomendado */}
-        <h2 className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
-          Tu dashboard GEO mensual
+        {/* Framework de medición mensual */}
+        <h2 id="framework" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+          Framework de medición mensual
         </h2>
 
         <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-8 rounded-xl border border-blue-200 mb-8">
@@ -298,8 +313,116 @@ export function ArticuloMetricasGEO() {
           </p>
         </div>
 
+        {/* Herramientas de tracking */}
+        <h2 id="herramientas" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+          Herramientas de tracking
+        </h2>
+
+        <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-8 rounded-xl border border-blue-200 mb-8">
+          <p className="font-bold text-xl mb-6" style={{ color: 'var(--brand-navy)' }}>
+            Herramientas emergentes para trackear GEO
+          </p>
+          
+          <div className="bg-white p-6 rounded-lg mb-6">
+            <ul className="space-y-4 text-gray-700">
+              <li>• <strong>BrightEdge AI Impact:</strong> Herramienta que analiza menciones en IAs y su impacto en tráfico.</li>
+              <li>• <strong>Semrush AI Visibility (beta):</strong> Herramienta que mide visibilidad en IAs y su impacto en búsquedas.</li>
+              <li>• <strong>Google Analytics 4:</strong> Para trackear tráfico referral desde IAs.</li>
+              <li>• <strong>Google Search Console:</strong> Para trackear branded searches.</li>
+            </ul>
+          </div>
+
+          <p className="text-sm text-gray-600">
+            💡 Aunque hay herramientas emergentes, el tracking manual sigue siendo más preciso y flexible.
+          </p>
+        </div>
+
+        {/* Dashboards y reportes */}
+        <h2 id="dashboards" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+          Dashboards y reportes
+        </h2>
+
+        <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-8 rounded-xl border border-blue-200 mb-8">
+          <p className="font-bold text-xl mb-6" style={{ color: 'var(--brand-navy)' }}>
+            Ejemplo de dashboard mensual
+          </p>
+          
+          <div className="bg-white p-6 rounded-lg mb-6">
+            <table className="w-full text-sm">
+              <thead className="border-b-2" style={{ borderColor: 'var(--brand-navy)' }}>
+                <tr>
+                  <th className="text-left p-2">Métrica</th>
+                  <th className="text-right p-2">Este mes</th>
+                  <th className="text-right p-2">Mes anterior</th>
+                  <th className="text-right p-2">Cambio</th>
+                </tr>
+              </thead>
+              <tbody className="text-gray-700">
+                <tr className="border-b">
+                  <td className="p-2">Citation Rate</td>
+                  <td className="text-right p-2 font-bold">28%</td>
+                  <td className="text-right p-2">22%</td>
+                  <td className="text-right p-2 text-green-600">+6%</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-2">AI SOV</td>
+                  <td className="text-right p-2 font-bold">18%</td>
+                  <td className="text-right p-2">15%</td>
+                  <td className="text-right p-2 text-green-600">+3%</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-2">Tráfico desde IAs</td>
+                  <td className="text-right p-2 font-bold">1,240 visitas</td>
+                  <td className="text-right p-2">890</td>
+                  <td className="text-right p-2 text-green-600">+39%</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="p-2">Branded Searches</td>
+                  <td className="text-right p-2 font-bold">3,800</td>
+                  <td className="text-right p-2">3,200</td>
+                  <td className="text-right p-2 text-green-600">+19%</td>
+                </tr>
+                <tr>
+                  <td className="p-2">Cobertura Keywords</td>
+                  <td className="text-right p-2 font-bold">42%</td>
+                  <td className="text-right p-2">35%</td>
+                  <td className="text-right p-2 text-green-600">+7%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p className="text-sm text-gray-600">
+            💡 Trackea estas métricas el mismo día cada mes (ej: día 1) para mantener consistencia en mediciones.
+          </p>
+        </div>
+
+        {/* Errores comunes al medir GEO */}
+        <h2 id="errores" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+          Errores comunes al medir GEO
+        </h2>
+
+        <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-8 rounded-xl border border-blue-200 mb-8">
+          <p className="font-bold text-xl mb-6" style={{ color: 'var(--brand-navy)' }}>
+            Errores comunes al medir GEO
+          </p>
+          
+          <div className="bg-white p-6 rounded-lg mb-6">
+            <ul className="space-y-4 text-gray-700">
+              <li>• <strong>Medir solo rankings de Google:</strong> Los rankings en motores de búsqueda generativos son diferentes y más importantes.</li>
+              <li>• <strong>No trackear tráfico referral:</strong> El tráfico proveniente de IAs es crucial para medir el impacto de GEO.</li>
+              <li>• <strong>No medir branded searches:</strong> Las búsquedas de marca después de menciones en IAs son indicativas de éxito.</li>
+              <li>• <strong>No implementar un sistema de scoring:</strong> Un sistema de scoring para la calidad de contexto ayuda a entender mejor el impacto de las menciones.</li>
+            </ul>
+          </div>
+
+          <p className="text-sm text-gray-600">
+            💡 Evita estos errores para obtener una medición precisa y efectiva de tu estrategia GEO.
+          </p>
+        </div>
+
         {/* FAQ */}
-        <h2 className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+        <h2 id="faq" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
           Preguntas frecuentes
         </h2>
 

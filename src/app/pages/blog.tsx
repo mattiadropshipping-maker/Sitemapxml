@@ -11,6 +11,16 @@ export function BlogPage() {
 
   const articles = [
     {
+      title: 'Cómo generar leads cuando los usuarios buscan en motores de búsqueda con IA',
+      excerpt:
+        'Descubre cómo generar leads desde ChatGPT, Perplexity y Gemini. Estrategia completa de GEO marketing, SEO para IA y captación de leads con búsqueda generativa.',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+      readTime: '11 min',
+      category: 'GEO',
+      date: '10 Mar 2026',
+      slug: 'leads-desde-buscadores-ia',
+    },
+    {
       title: 'SEO vs GEO: cómo cambiará el posicionamiento en la era de la IA',
       excerpt:
         'Comparativa completa entre SEO tradicional y GEO. Descubre cómo adaptarte al cambio de Google a ChatGPT, Perplexity y Gemini.',

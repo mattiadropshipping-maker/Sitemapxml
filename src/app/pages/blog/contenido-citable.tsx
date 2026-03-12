@@ -17,26 +17,41 @@ export function ArticuloContenidoCitable() {
         Descubre qué formatos y tipos de contenido citan más ChatGPT, Perplexity y Gemini. Guía completa con ejemplos y plantillas.
       </div>
 
+      {/* Tabla de Contenidos */}
+      <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-xl mb-8 border border-blue-200">
+        <h3 className="text-xl font-bold mb-4" style={{ color: 'var(--brand-navy)' }}>
+          📋 Tabla de Contenidos
+        </h3>
+        <ul className="space-y-2 text-gray-700">
+          <li>• <a href="#por-que-importa" className="hover:text-blue-600">Por qué el formato es crítico para GEO</a></li>
+          <li>• <a href="#ranking" className="hover:text-blue-600">Ranking: Los 7 formatos más citados</a></li>
+          <li>• <a href="#anti-patterns" className="hover:text-blue-600">Formatos que las IAs ignoran</a></li>
+          <li>• <a href="#implementacion" className="hover:text-blue-600">Cómo implementar contenido citable</a></li>
+          <li>• <a href="#ejemplos" className="hover:text-blue-600">Ejemplos antes/después</a></li>
+          <li>• <a href="#faq" className="hover:text-blue-600">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+
       {/* Introducción */}
       <div className="prose max-w-none">
         <p className="text-xl leading-relaxed text-gray-700 mb-6">
           No todo el contenido es igual para los motores de IA. Mientras que algunos formatos son citados 
-          consistentemente, otros son <strong>prácticamente invisibles para ChatGPT, Perplexity y Gemini</strong>.
+          consistentemente, otros son <strong>prácticamente invisibles para <a href="https://openai.com/chatgpt" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ChatGPT</a>, <a href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Perplexity</a> y Gemini</strong>.
         </p>
 
         <p className="text-lg leading-relaxed text-gray-700 mb-8">
           Después de analizar más de 10,000 respuestas generativas y estudiar los patrones de citación de los 
           principales LLMs, hemos identificado exactamente <strong>qué tipo de contenido tiene más probabilidades 
-          de ser citado</strong> y por qué.
+          de ser citado</strong> y por qué. Si quieres entender los fundamentos, lee nuestra <Link to="/blog/que-es-geo" className="text-blue-600 hover:underline font-semibold">guía completa sobre GEO</Link>.
         </p>
 
         <p className="text-lg leading-relaxed text-gray-700 mb-8">
           Esta guía te muestra los 7 formatos de contenido que dominan las citaciones de IA, con ejemplos prácticos 
-          y plantillas que puedes implementar inmediatamente.
+          y plantillas que puedes implementar inmediatamente. También ofrecemos <Link to="/servicios/geo" className="text-blue-600 hover:underline font-semibold">servicios de optimización de contenido para GEO</Link>.
         </p>
 
         {/* Sección 1: Por qué importa */}
-        <h2 className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+        <h2 id="por-que-importa" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
           Por qué el formato del contenido es crítico para GEO
         </h2>
 
@@ -87,7 +102,7 @@ export function ArticuloContenidoCitable() {
         </div>
 
         {/* Sección 2: Ranking de formatos */}
-        <h2 className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+        <h2 id="ranking" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
           Ranking: Los 7 formatos de contenido más citados por IAs
         </h2>
 
@@ -434,7 +449,7 @@ export function ArticuloContenidoCitable() {
         </div>
 
         {/* Sección 3: Formatos que NO funcionan */}
-        <h2 className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+        <h2 id="anti-patterns" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
           Formatos que las IAs ignoran (evita estos)
         </h2>
 
@@ -477,7 +492,7 @@ export function ArticuloContenidoCitable() {
         </div>
 
         {/* Sección 4: Checklist de optimización */}
-        <h2 className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+        <h2 id="implementacion" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
           Checklist: Convierte cualquier contenido en citable por IAs
         </h2>
 
@@ -549,8 +564,36 @@ export function ArticuloContenidoCitable() {
           </div>
         </div>
 
+        {/* Ejemplos antes/después */}
+        <h2 id="ejemplos" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+          Ejemplos antes/después de optimización para citaciones
+        </h2>
+
+        <div className="bg-gray-50 p-6 rounded-xl mb-8">
+          <h3 className="text-xl font-bold mb-4" style={{ color: 'var(--brand-navy)' }}>
+            Antes:
+          </h3>
+          <p className="text-gray-700 leading-relaxed">
+            "El marketing de contenidos es una estrategia efectiva para aumentar la visibilidad de tu marca. 
+            Incluye blogs, videos y webinars. Es importante tener un plan claro y consistente."
+          </p>
+        </div>
+
+        <div className="bg-gray-50 p-6 rounded-xl mb-8">
+          <h3 className="text-xl font-bold mb-4" style={{ color: 'var(--brand-navy)' }}>
+            Después:
+          </h3>
+          <p className="text-gray-700 leading-relaxed">
+            "El marketing de contenidos es una estrategia efectiva para aumentar la visibilidad de tu marca. 
+            Incluye blogs, videos y webinars. Es importante tener un plan claro y consistente. Según un estudio 
+            de 500 empresas B2B, las que implementan un plan de marketing de contenidos aumentan su tráfico 
+            orgánico en un 30% en promedio. Aquí te mostramos cómo crear un plan de marketing de contenidos 
+            exitoso para tu empresa."
+          </p>
+        </div>
+
         {/* FAQ Section */}
-        <h2 className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+        <h2 id="faq" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
           Preguntas frecuentes sobre contenido citable
         </h2>
 

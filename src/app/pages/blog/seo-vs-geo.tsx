@@ -17,6 +17,21 @@ export function ArticuloSEOvsGEO() {
         Comparativa completa entre SEO tradicional y GEO. Descubre cómo adaptarte al cambio de Google a ChatGPT, Perplexity y Gemini.
       </div>
 
+      {/* Tabla de Contenidos */}
+      <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-xl mb-8 border border-blue-200">
+        <h3 className="text-xl font-bold mb-4" style={{ color: 'var(--brand-navy)' }}>
+          📋 Tabla de Contenidos
+        </h3>
+        <ul className="space-y-2 text-gray-700">
+          <li>• <a href="#evolucion" className="hover:text-blue-600">La evolución de la búsqueda</a></li>
+          <li>• <a href="#comparativa" className="hover:text-blue-600">Comparativa detallada: SEO vs GEO</a></li>
+          <li>• <a href="#coexistencia" className="hover:text-blue-600">¿Pueden coexistir SEO y GEO?</a></li>
+          <li>• <a href="#estrategia" className="hover:text-blue-600">Estrategia dual: SEO + GEO</a></li>
+          <li>• <a href="#transicion" className="hover:text-blue-600">Cómo hacer la transición</a></li>
+          <li>• <a href="#faq" className="hover:text-blue-600">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+
       {/* Introducción */}
       <div className="prose max-w-none">
         <p className="text-xl leading-relaxed text-gray-700 mb-6">
@@ -25,19 +40,19 @@ export function ArticuloSEOvsGEO() {
         </p>
 
         <p className="text-lg leading-relaxed text-gray-700 mb-8">
-          SEO (Search Engine Optimization) ha sido la base del tráfico orgánico durante 25 años. Pero cuando el 
-          60% de tu audiencia empieza a preguntar a ChatGPT en lugar de buscar en Google, <strong>las reglas del 
+          <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">SEO (Search Engine Optimization)</a> ha sido la base del tráfico orgánico durante 25 años. Pero cuando el 
+          60% de tu audiencia empieza a preguntar a <a href="https://openai.com/chatgpt" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ChatGPT</a> en lugar de buscar en Google, <strong>las reglas del 
           juego cambian por completo</strong>.
         </p>
 
         <p className="text-lg leading-relaxed text-gray-700 mb-8">
-          GEO (Generative Engine Optimization) no es el nuevo nombre del SEO. Es una disciplina completamente 
+          <Link to="/blog/que-es-geo" className="text-blue-600 hover:underline font-semibold">GEO (Generative Engine Optimization)</Link> no es el nuevo nombre del SEO. Es una disciplina completamente 
           diferente que requiere una mentalidad, tácticas y métricas distintas. Esta guía te muestra exactamente 
-          cómo hacer la transición.
+          cómo hacer la transición. También puedes explorar nuestro <Link to="/servicios/geo" className="text-blue-600 hover:underline font-semibold">servicio de consultoría GEO</Link>.
         </p>
 
         {/* Sección 1: La evolución */}
-        <h2 className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+        <h2 id="evolucion" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
           La evolución de la búsqueda: de keywords a conversaciones
         </h2>
 
@@ -117,7 +132,7 @@ export function ArticuloSEOvsGEO() {
         </div>
 
         {/* Sección 2: Comparativa directa */}
-        <h2 className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+        <h2 id="comparativa" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
           SEO vs GEO: Comparativa completa
         </h2>
 
@@ -191,8 +206,8 @@ export function ArticuloSEOvsGEO() {
         </div>
 
         {/* Sección 3: Qué se mantiene, qué cambia */}
-        <h2 className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
-          Qué se mantiene del SEO y qué cambia radicalmente
+        <h2 id="coexistencia" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+          ¿Pueden coexistir SEO y GEO?
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -274,8 +289,8 @@ export function ArticuloSEOvsGEO() {
         </div>
 
         {/* Sección 4: Estrategia de transición */}
-        <h2 className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
-          Cómo hacer la transición de SEO a SEO + GEO
+        <h2 id="estrategia" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+          Estrategia dual: SEO + GEO
         </h2>
 
         <p className="text-lg leading-relaxed text-gray-700 mb-6">
@@ -521,7 +536,7 @@ export function ArticuloSEOvsGEO() {
         </div>
 
         {/* FAQ Section */}
-        <h2 className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+        <h2 id="faq" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
           Preguntas frecuentes sobre la transición SEO → GEO
         </h2>
 

@@ -36,6 +36,7 @@ import { ArticuloMetricasGEO } from './pages/blog/metricas-geo';
 import { ArticuloTendencias2026 } from './pages/blog/tendencias-2026';
 import { ArticuloROICampanasIA } from './pages/blog/roi-campanas-ia';
 import { ArticuloArquitecturaWeb } from './pages/blog/arquitectura-web';
+import { ArticuloLeadsDesdeBuscadoresIA } from './pages/blog/leads-desde-buscadores-ia';
 
 export const router = createBrowserRouter([
   {
@@ -63,6 +64,7 @@ export const router = createBrowserRouter([
       { path: 'blog/tendencias-2026', Component: ArticuloTendencias2026 },
       { path: 'blog/roi-campanas-ia', Component: ArticuloROICampanasIA },
       { path: 'blog/arquitectura-web', Component: ArticuloArquitecturaWeb },
+      { path: 'blog/leads-desde-buscadores-ia', Component: ArticuloLeadsDesdeBuscadoresIA },
       { path: 'casos-exito', Component: CasosExito },
       { path: 'nosotros', Component: Nosotros },
       { path: 'contacto', Component: Contacto },

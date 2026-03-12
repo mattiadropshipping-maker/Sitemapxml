@@ -17,26 +17,42 @@ export function ArticuloAuditoriaIA() {
         Guía paso a paso para auditar la visibilidad de tu marca en ChatGPT, Perplexity y Gemini. Incluye checklist y herramientas.
       </div>
 
+      {/* Tabla de Contenidos */}
+      <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-xl mb-8 border border-blue-200">
+        <h3 className="text-xl font-bold mb-4" style={{ color: 'var(--brand-navy)' }}>
+          📋 Tabla de Contenidos
+        </h3>
+        <ul className="space-y-2 text-gray-700">
+          <li>• <a href="#por-que-auditoria" className="hover:text-blue-600">Por qué necesitas una auditoría de IA</a></li>
+          <li>• <a href="#fase-1" className="hover:text-blue-600">Fase 1: Preparación y configuración</a></li>
+          <li>• <a href="#fase-2" className="hover:text-blue-600">Fase 2: Ejecución de consultas</a></li>
+          <li>• <a href="#fase-3" className="hover:text-blue-600">Fase 3: Análisis y documentación</a></li>
+          <li>• <a href="#fase-4" className="hover:text-blue-600">Fase 4: Benchmarking competitivo</a></li>
+          <li>• <a href="#herramientas" className="hover:text-blue-600">Herramientas y recursos</a></li>
+          <li>• <a href="#faq" className="hover:text-blue-600">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+
       {/* Introducción */}
       <div className="prose max-w-none">
         <p className="text-xl leading-relaxed text-gray-700 mb-6">
           No puedes mejorar lo que no mides. Si no sabes <strong>cómo, cuándo y dónde las IAs mencionan (o ignoran) 
-          tu marca</strong>, estás volando a ciegas en el nuevo ecosistema de búsqueda generativa.
+          tu marca</strong>, estás volando a ciegas en el nuevo ecosistema de búsqueda generativa impulsado por <a href="https://openai.com/chatgpt" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ChatGPT</a>, <a href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Perplexity</a> y Gemini.
         </p>
 
         <p className="text-lg leading-relaxed text-gray-700 mb-8">
-          Una auditoría de visibilidad en IA es el punto de partida obligatorio para cualquier estrategia de GEO. 
+          Una auditoría de visibilidad en IA es el punto de partida obligatorio para cualquier estrategia de <Link to="/blog/que-es-geo" className="text-blue-600 hover:underline font-semibold">GEO (Generative Engine Optimization)</Link>. 
           Te permite entender tu posición actual, identificar oportunidades críticas y establecer una línea base 
           para medir resultados.
         </p>
 
         <p className="text-lg leading-relaxed text-gray-700 mb-8">
           En esta guía completa, te mostramos <strong>exactamente cómo realizar una auditoría profesional de visibilidad 
-          en IA</strong> para tu empresa, paso a paso.
+          en IA</strong> para tu empresa, paso a paso. Si prefieres que lo hagamos por ti, conoce nuestro <Link to="/servicios/geo" className="text-blue-600 hover:underline font-semibold">servicio de auditoría GEO profesional</Link>.
         </p>
 
         {/* Sección 1: Por qué necesitas una auditoría */}
-        <h2 className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+        <h2 id="por-que-auditoria" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
           Por qué una auditoría de visibilidad en IA es crítica
         </h2>
 
@@ -93,7 +109,7 @@ export function ArticuloAuditoriaIA() {
         </div>
 
         {/* Sección 2: Preparación */}
-        <h2 className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+        <h2 id="fase-1" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
           Fase 1: Preparación y configuración
         </h2>
 
@@ -192,7 +208,7 @@ export function ArticuloAuditoriaIA() {
         </div>
 
         {/* Sección 3: Ejecución */}
-        <h2 className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+        <h2 id="fase-2" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
           Fase 2: Ejecución de la auditoría
         </h2>
 
@@ -376,7 +392,7 @@ export function ArticuloAuditoriaIA() {
         </div>
 
         {/* Sección 4: Análisis */}
-        <h2 className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+        <h2 id="fase-3" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
           Fase 3: Análisis y generación de insights
         </h2>
 
@@ -483,7 +499,7 @@ export function ArticuloAuditoriaIA() {
         </div>
 
         {/* Sección 5: Plan de acción */}
-        <h2 className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+        <h2 id="fase-4" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
           Fase 4: De auditoría a plan de acción
         </h2>
 
@@ -640,7 +656,7 @@ export function ArticuloAuditoriaIA() {
         </div>
 
         {/* FAQ Section */}
-        <h2 className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+        <h2 id="faq" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
           Preguntas frecuentes sobre auditorías de IA
         </h2>
 

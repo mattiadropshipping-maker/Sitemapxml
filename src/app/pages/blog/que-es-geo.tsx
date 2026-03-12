@@ -17,26 +17,43 @@ export function ArticuloQueEsGEO() {
         Descubre qué es GEO (Generative Engine Optimization), cómo funciona y por qué reemplazará al SEO tradicional en la era de ChatGPT, Perplexity y Gemini.
       </div>
 
+      {/* Tabla de Contenidos */}
+      <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-xl mb-8 border border-blue-200">
+        <h3 className="text-xl font-bold mb-4" style={{ color: 'var(--brand-navy)' }}>
+          📋 Tabla de Contenidos
+        </h3>
+        <ul className="space-y-2 text-gray-700">
+          <li>• <a href="#que-es-geo" className="hover:text-blue-600">¿Qué es GEO?</a></li>
+          <li>• <a href="#diferencia-seo-geo" className="hover:text-blue-600">La diferencia fundamental entre SEO y GEO</a></li>
+          <li>• <a href="#por-que-importa" className="hover:text-blue-600">¿Por qué importa el GEO ahora?</a></li>
+          <li>• <a href="#como-funciona" className="hover:text-blue-600">¿Cómo funciona el GEO?</a></li>
+          <li>• <a href="#estrategias" className="hover:text-blue-600">Estrategias de GEO que funcionan</a></li>
+          <li>• <a href="#empezar" className="hover:text-blue-600">Cómo empezar con GEO</a></li>
+          <li>• <a href="#faq" className="hover:text-blue-600">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+
       {/* Introducción */}
       <div className="prose max-w-none">
         <p className="text-xl leading-relaxed text-gray-700 mb-6">
-          Durante más de 25 años, el SEO (Search Engine Optimization) ha sido la piedra angular del marketing digital. 
+          Durante más de 25 años, el <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">SEO (Search Engine Optimization)</a> ha sido la piedra angular del marketing digital. 
           Pero algo fundamental está cambiando: <strong>las personas ya no están usando Google de la misma manera</strong>.
         </p>
 
         <p className="text-lg leading-relaxed text-gray-700 mb-8">
-          En lugar de hacer clic en 10 enlaces azules, millones de usuarios ahora hacen preguntas a ChatGPT, Perplexity, 
+          En lugar de hacer clic en 10 enlaces azules, millones de usuarios ahora hacen preguntas a <a href="https://openai.com/chatgpt" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ChatGPT</a>, <a href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Perplexity</a>, 
           Gemini o Claude y reciben respuestas directas, conversacionales y contextuales. Este cambio no es temporal: 
           <strong> es el inicio de una nueva era en la búsqueda de información</strong>.
         </p>
 
         <p className="text-lg leading-relaxed text-gray-700 mb-8">
           Bienvenido a la era del <strong>GEO (Generative Engine Optimization)</strong>: la disciplina que determina 
-          si tu marca será citada, recomendada e ignorada por los motores de inteligencia artificial.
+          si tu marca será citada, recomendada e ignorada por los motores de inteligencia artificial. 
+          Si necesitas ayuda implementando GEO, conoce nuestro <Link to="/servicios/geo" className="text-blue-600 hover:underline font-semibold">servicio de consultoría GEO</Link>.
         </p>
 
         {/* Sección 1: ¿Qué es GEO? */}
-        <h2 className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+        <h2 id="que-es-geo" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
           ¿Qué es GEO (Generative Engine Optimization)?
         </h2>
 
@@ -83,7 +100,7 @@ export function ArticuloQueEsGEO() {
         </p>
 
         {/* Sección 2: La diferencia fundamental */}
-        <h2 className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+        <h2 id="diferencia-seo-geo" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
           La diferencia fundamental entre SEO y GEO
         </h2>
 
@@ -127,7 +144,7 @@ export function ArticuloQueEsGEO() {
         </div>
 
         {/* Sección 3: Por qué GEO es el futuro */}
-        <h2 className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+        <h2 id="por-que-importa" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
           Por qué GEO será el nuevo estándar del marketing digital
         </h2>
 
@@ -191,7 +208,7 @@ export function ArticuloQueEsGEO() {
         </p>
 
         {/* Sección 4: Cómo funciona GEO */}
-        <h2 className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+        <h2 id="como-funciona" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
           Cómo funciona GEO: Los pilares de la optimización generativa
         </h2>
 
@@ -242,7 +259,7 @@ export function ArticuloQueEsGEO() {
         </div>
 
         {/* Sección 5: Estrategias GEO accionables */}
-        <h2 className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+        <h2 id="estrategias" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
           Estrategias GEO accionables para tu empresa
         </h2>
 
@@ -328,7 +345,7 @@ export function ArticuloQueEsGEO() {
         </div>
 
         {/* FAQ Section */}
-        <h2 className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
+        <h2 id="faq" className="text-3xl font-bold mt-12 mb-6" style={{ color: 'var(--brand-navy)' }}>
           Preguntas frecuentes sobre GEO
         </h2>
 
